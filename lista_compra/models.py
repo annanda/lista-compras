@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
 from django.db import models
+from django.utils import timezone
 
-# Create your models here.
+class Item(models.Model):
+    nome = models.CharField(max_length = 300)
+    categoria = models.CharField(max_length = 200)
